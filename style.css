@@ -542,7 +542,7 @@ textarea:focus {
 /* --- RESPONSIVE --- */
 @media (max-width: 900px) {
     h1 {
-        font-size: 3rem;
+        font-size: 2.2rem;
     }
 
     .nav-dock {
@@ -579,22 +579,31 @@ textarea:focus {
     }
 
     .text-block h2 {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 
-    .services-grid {
+    .services-grid, .portfolio-grid {
         grid-template-columns: 1fr;
     }
 
     .service-card {
         height: auto;
-        min-height: 400px;
+        min-height: 350px;
+    }
+
+    .project-card {
+        height: 300px;
     }
 
     .stats-bar {
         flex-direction: column;
         gap: 20px;
+        padding: 30px 20px;
         text-align: center;
+    }
+
+    .stat-item {
+        font-size: 1.2rem;
     }
 
     .form-row {
@@ -603,6 +612,22 @@ textarea:focus {
 
     .form-box {
         padding: 30px 20px;
+    }
+
+    .section-header h2 {
+        font-size: 2rem;
+    }
+
+    .services-section, .portfolio-section, .contact-section {
+        padding: 50px 20px !important;
+    }
+
+    .contact-section {
+        padding-bottom: 150px !important;
+    }
+
+    .form-box h2 {
+        font-size: 2rem !important;
     }
 }
 
@@ -875,20 +900,40 @@ textarea:focus {
 /* Responsive Projets */
 @media (max-width: 900px) {
     .project-header {
-        height: 60vh;
+        height: 50vh;
     }
 
     .project-title-box h1 {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 
     .project-infos-bar {
-        gap: 30px;
+        gap: 20px;
+        padding: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-content {
+        padding: 40px 20px;
     }
 
     .content-row {
         flex-direction: column !important;
         gap: 30px;
+        margin-bottom: 50px;
     }
 
+    .text-part h2 {
+        font-size: 2rem;
+    }
+
+    .img-part img {
+        height: 250px;
+    }
+    
+    .carousel-track img {
+        height: 200px;
+        min-width: 200px;
+    }
 }
